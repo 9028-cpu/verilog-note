@@ -1,0 +1,23 @@
+1. verilog中的数据类型
+/*两大类 
+a.线网类(net类) --- wire
+b.变量类(variable类) --- reg   */
+
+//门原语是net类型
+//对于端口信号，input/ inout信号必须是wire，output可以是wire也可以是reg;
+
+2. 数字表示格式
+//有符号数：
+// 位宽 ' sb 数字 --- sign bit?
+
+3. case语句
+// 格式：
+/* case(表达式)
+  case1: 情况1；
+  case2: 情况2；
+  ...
+  default: 默认情况；
+  endcase    */
+
+4. verilog语言描述
+example1: 多路选择器
