@@ -1,0 +1,47 @@
+主要作补充
+
+lecture2
+1. 
+logic values:
+z --- disconnect, which means not contribute to the output
+
+2. 
+Data type declarations: data_type [size] ... ...
+A. Net Data type:
+  wire x;
+  tri [7:0] Dataout; // --- used for tri-state circuit nodes
+B. Register Data type:
+  reg ...;    // --- unsigned variable of any bit size
+  interger k; // --- signed 32-bit variable
+C. Memory Data type:
+  reg [7:0] R [3:0]; // --- declare 4 8-bit variables
+  R[3]               // --- access this one
+  R[3][7]            // --- access the left most bit of this one R[3]
+D. Parameter Data type:
+  parameter n = 32; 
+  example: n-bit adder
+
+lecture4
+1.
+Parameter Redefinition: (P12)
+// Parameters in a module may be redefined for each instance
+A. Explicit PR
+  module_name instance_name (signal1, signal2, ...);
+  defparam instance_name.parameter_name = value;
+B. Implicit PR
+  module_name #(value1, value2) instance_name(signal1, signal2);
+
+example:
+
+2.
+The generate Construct:
+/* Syntax:
+  generate
+    [procedural statements]
+      [instantiation statements]
+  endgenerate
+
+example:
+
+lecture5
+1.
