@@ -1,0 +1,21 @@
+lecture7
+1.
+Functions:
+// A function is a part of code which may be reused, so need to separate from the other parts in a module
+/* Syntax:
+	function [size_or_type] function_name;
+	 input declarations
+	 local variable declarations
+	 procedural statements
+	endfunction    */
+//size_or_type is optional, it's the returned type or range as [msb:lsb]. The default is a 1-bit value.
+//Functions should have at least one input
+//Functions are only defined within a module
+//
+
+2. 
+Tasks:
+// A task is a part of code which may be reused, so need to separate from the other parts in a module
+/* Syntax:
+	task task_name;
+	 input
