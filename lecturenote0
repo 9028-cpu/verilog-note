@@ -45,3 +45,69 @@ example:
 
 lecture5
 1.
+Primitive Instantiations:
+/* Gate types:
+A. Normal gate:
+	and, nand, or, nor, xor, xnor, not(f,...) */
+B. Notif and Bufif gates are tri-state buffers:
+	buf   	//f=a   buf(f,a)
+	notif0	//f=()	notif0(f,a,e)
+	notif1	//f=()	notif1(f,a,e)
+	bufif0	//f=()	bufif0(f,a,e)
+	bufif1	//f=()	bufif1(f,a,e)
+
+2.
+Delay:
+// Up to 3 delays can be defined
+example:
+A. and #(2) o1 (out1,a,b)
+// If only on delay is defined, it is for all
+B. and #(2,3) o2 (out2,a,b)
+// If two delays are defined, they are rise and fall delays
+C. bufif0 #(5,6,7) o3 (out3,a,b)
+// If three delays are defined, they are rise, fall, turn-off delays, which can only be used for buffers
+
+3. 
+对于一个电路图，有三种方式来进行描述：
+A. 门级描述: Primitive instantiation
+B. 数据流级描述：Continuous assignment
+C. 行为级描述：（使用always语句块）
+
+4.
+这节还提到了阻塞分配 和 非阻塞分配
+
+lecture6
+1. 
+if...else...用法
+
+2.
+case:
+casez: treat z as don't care values
+casex: treat z and x as don't care values
+注意这里的statements是in order的
+
+3.
+Loop:
+A. for:
+	for循环执行内部statements，直到迭代条件满足
+example:
+	parameter n=4;
+	always @ (X)
+	begin
+		Count = 0;
+		for(k=0;k<n;k=k+1)
+		Count = Count + X[k];
+	end
+B. while:
+	while执行给定的statements直到表达式是false
+	//如果一开始while里的statements就是false，则没有statement需要被执行
+example:
+C. repeat:
+	repeat执行给定的statements以一定的次数n
+example:
+	initial
+	begin
+		repeat (10) a=a+~b;
+	end
+D. forever:
+	forever永不停止statements
