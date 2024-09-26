@@ -1,6 +1,0 @@
-1. 
-Gates:
-examples:
-注意：in lecturenote0, Part of Delay, which mentions rise and fall time.
-1.1.
-or #(4,3) ig(o,a,b); // the or gate is called ig(instance name); rise time = 4, fall time = 3

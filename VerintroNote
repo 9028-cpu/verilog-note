@@ -1,0 +1,15 @@
+c1. 
+Gates:
+examples:
+注意：in lecturenote0, Part of Delay, which mentions rise and fall time.
+1.1.
+or #(4,3) ig(o,a,b); // the or gate is called ig(instance name); rise time = 4, fall time = 3
+xor #(5) xor1(a,b,c); // a=b xor c after five time units, the gate is called xor1
+xor (pull1,strong0) #5 (a,b,c); // Identical gate with pull-up strength pull1 and pull-down strength strong0
+ what is strength
+1.2.
+buf c1 (o,p,q,r,in); // buffers, have one input and one or more outputs
+1.3.
+Three-state gates:
+// They propagate z signal if their control signal is deasserted.
+// They can have three delay specifications: rise time, fall time, a time to go into 3-state
