@@ -11,7 +11,7 @@ Functions:
 //size_or_type is optional, it's the returned type or range as [msb:lsb]. The default is a 1-bit value.
 //Functions should have at least one input
 //Functions are only defined within a module
-//
+//The function name serves as the 
 
 2. 
 Tasks:
