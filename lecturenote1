@@ -18,4 +18,13 @@ Tasks:
 // A task is a part of code which may be reused, so need to separate from the other parts in a module
 /* Syntax:
 	task task_name;
-	 input
+	 input declarations
+	 output declarations
+	 local variable declarations
+	 procedural statements
+	endtask    */
+//A task may have any number of inputs,ouputs, inouts
+//A task does not return any value by its name
+//A task is like a subroutine
+
+example: 16-to-1 multiplexer
